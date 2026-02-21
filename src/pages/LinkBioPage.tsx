@@ -2,38 +2,44 @@ import { motion } from "framer-motion"
 import { ProfileSection } from "@/components/ProfileSection"
 import { LinkCard } from "@/components/LinkCard"
 import { SocialFooter } from "@/components/SocialFooter"
-import { Globe, Youtube, Mail, ShoppingBag, FileText, MessageCircle, Send } from "lucide-react"
+import { BookOpen, Calendar, Users, Bell, Mail, MessageCircle, Send, ClipboardList } from "lucide-react"
 
 const links = [
   {
-    title: "Мой сайт",
-    description: "Портфолио и услуги",
+    title: "Расписание уроков",
+    description: "Актуальное расписание на неделю",
     href: "#",
-    icon: Globe,
+    icon: Calendar,
   },
   {
-    title: "YouTube канал",
-    description: "Видео и туториалы",
+    title: "Домашние задания",
+    description: "Задания и сроки сдачи",
     href: "#",
-    icon: Youtube,
+    icon: ClipboardList,
   },
   {
-    title: "Магазин",
-    description: "Товары и услуги",
+    title: "Учебные материалы",
+    description: "Конспекты, презентации и файлы",
     href: "#",
-    icon: ShoppingBag,
+    icon: BookOpen,
   },
   {
-    title: "Telegram",
-    description: "Написать напрямую",
+    title: "Чат класса",
+    description: "Общение и объявления",
     href: "#",
-    icon: Send,
+    icon: MessageCircle,
   },
   {
-    title: "Бесплатные материалы",
-    description: "Шаблоны и гайды",
+    title: "Объявления",
+    description: "Важные новости и события",
     href: "#",
-    icon: FileText,
+    icon: Bell,
+  },
+  {
+    title: "Контакты учителей",
+    description: "Классный руководитель и педагоги",
+    href: "#",
+    icon: Users,
   },
 ]
 
@@ -211,9 +217,9 @@ export function LinkBioPage() {
       >
         <motion.div variants={itemVariants} className="pt-2">
           <ProfileSection
-            name="GlassLinks"
-            bio="Креативный дизайнер и разработчик"
-            imageUrl="/images/544291433-18043960274659947-5766591717842883293-n.jpg"
+            name="7 «А» Класс"
+            bio="Школа №1 • 2025–2026 учебный год"
+            imageUrl="https://cdn.poehali.dev/projects/5463eb6c-5f2c-426c-aeb5-468e0bd8c578/files/797d4dc4-1b44-467e-a829-512c1d76a504.jpg"
           />
         </motion.div>
 
@@ -226,7 +232,7 @@ export function LinkBioPage() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="pb-2">
-          <SocialFooter socials={socials} copyright="2025 GlassLinks" />
+          <SocialFooter socials={socials} copyright="2025–2026 • 7 класс" />
         </motion.div>
       </motion.div>
     </main>
